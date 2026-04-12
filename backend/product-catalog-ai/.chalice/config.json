@@ -6,8 +6,8 @@
       "api_gateway_stage": "api",
       "environment_variables": {
         "AWS_REGION": "us-east-1",
-        "S3_BUCKET_NAME": "product-catalog-ai-sara",
-        "DYNAMODB_TABLE_NAME": "product-catalog",
+        "S3_BUCKET_NAME": "comp264-final-project-group4-bucket",
+        "DYNAMODB_TABLE_NAME": "product-catalog-results",
         "TARGET_LANGUAGES": "ko,es,fr"
       }
     }
