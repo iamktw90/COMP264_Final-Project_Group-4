@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog AI</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">COMP264 Final Project</p>
+      <h1>Universal AI-Powered Product Identification</h1>
+      <p class="intro">
+        Test the app by entering an image name or uploading a JPG or PNG product image.
+      </p>
+    </section>
+
+    <section class="panel">
+      <form id="analyze-form" class="form">
+        <label for="image_name">Image name</label>
+        <input id="image_name" name="image_name" type="text" placeholder="shoe-sample.jpg">
+
+        <label for="image_file">Or choose an image file</label>
+        <input id="image_file" name="image_file" type="file" accept=".jpg,.jpeg,.png">
+
+        <div class="actions">
+          <button type="submit">Analyze by Name</button>
+          <button id="upload-button" type="button" class="secondary">Upload File</button>
+        </div>
+      </form>
+
+      <div class="hint">
+        Try names like <code>shoe-sample.jpg</code>, <code>phone-demo.png</code>, or <code>bag-test.jpeg</code>.
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>API Result</h2>
+        <button id="load-results" type="button" class="secondary">Refresh History</button>
+      </div>
+      <pre id="output">No result yet.</pre>
+      <div id="history" class="history"></div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
